@@ -1,0 +1,162 @@
+// ## Colors
+
+// ### Primary
+
+// - Soft blue: hsl(215, 51%, 70%)
+// - Cyan: hsl(178, 100%, 50%)
+
+// ### Neutral
+
+// - Very dark blue (main BG): hsl(217, 54%, 11%)
+// - Very dark blue (card BG): hsl(216, 50%, 16%)
+// - Very dark blue (line): hsl(215, 32%, 27%)
+// - White: hsl(0, 0%, 100%)
+// Weights: 300, 400, 600
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+
+}
+
+.container {
+    width: 328px;
+    // height: 615px;
+    // border: 2px dotted blue;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1em;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0 3px 2em 2em rgb(0 0 0 / 0.2);
+
+}
+
+.image {
+    width: 280px;
+    height: 280px;
+    background-image: url("images/image-equilibrium.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    // border: 2px dotted green;
+    margin-top: 1.25em;
+    border-radius: .5em;
+}
+
+.lower {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    border-radius: 1em;
+}
+
+.block {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+    align-self: center;
+    padding: 1em 0;
+}
+
+.box_a,
+.box_b {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1,
+p,
+.block,
+.creator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+img {
+    width: 2em;
+}
+
+.text_a {
+    color: hsl(178, 100%, 50%);
+}
+
+p,
+.text_b,
+.text_c {
+    color: hsl(215, 51%, 70%);
+
+}
+
+h1,
+.text_d {
+    color: hsl(0, 0%, 100%);
+}
+
+h1 {
+    font-size: 22px;
+    padding: 1em;
+}
+
+p {
+    margin: 0 1em;
+    font-weight: 300;
+}
+
+.creator {
+    margin: 1em;
+}
+
+.creator img {
+    margin-right: 1em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.text_a,
+.text_b {
+    margin-left: .5em;
+    font-size: 16px;
+    font-weight: 400;
+
+
+}
+
+.icon_a {
+    padding-top: .25em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-size: 11px;
+}
