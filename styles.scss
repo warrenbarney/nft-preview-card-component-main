@@ -28,7 +28,8 @@ body {
     font-weight: 400;
     width: 100%;
     min-height: 100dvh;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     place-items: center;
     justify-content: center;
     align-items: center;
@@ -47,7 +48,7 @@ body {
     border-radius: 1em;
     background-color: hsl(216, 50%, 16%);
     box-shadow: 0 3px 2em 2em rgb(0 0 0 / 0.2);
-
+    padding-bottom: .5em;
 }
 
 .image {
@@ -57,7 +58,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     // border: 2px dotted green;
-    margin-top: 1.25em;
+    margin-top: 1.5em;
     border-radius: .5em;
 }
 
@@ -74,10 +75,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width: 285px;
     border-bottom: 2px solid hsl(215, 32%, 27%);
     align-self: center;
     padding: 1em 0;
+
 }
 
 .box_a,
@@ -86,6 +88,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 h1,
@@ -100,6 +103,12 @@ p,
 
 img {
     width: 2em;
+}
+
+img:hover {
+    background-color: hsl(178, 100%, 50%);
+    opacity: .1;
+
 }
 
 .text_a {
@@ -120,16 +129,21 @@ h1,
 
 h1 {
     font-size: 22px;
-    padding: 1em;
+    padding: 1em 1em;
+}
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
 }
 
 p {
-    margin: 0 1em;
+    margin: 0 1.25em;
     font-weight: 300;
 }
 
 .creator {
-    margin: 1em;
+    margin: 1em 1.25em;
+    font-weight: 300;
 }
 
 .creator img {
@@ -141,15 +155,25 @@ p {
 .text_a,
 .text_b {
     margin-left: .5em;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
+}
 
+.text_c,
+.text_d {
+    font-size: 15px;
+}
 
+.text_d:hover {
+    color: hsl(178, 100%, 50%);
 }
 
 .icon_a {
     padding-top: .25em;
 }
+
+
+
 
 .attribution {
     font-size: 11px;
