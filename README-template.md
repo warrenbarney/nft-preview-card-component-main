@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution on Github](https://github.com/warrenbarney/nft-preview-card-component-main)
+- Solution URL: [Solution on Github](https://github.com/warrenbarney/nft-preview-card-component-main)(target=(_blank))
 - Live Site URL: [Live](https://main--dapper-pegasus-428307.netlify.app/)
 
 ## My process
