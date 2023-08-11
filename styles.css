@@ -38,6 +38,9 @@ body {
   background-repeat: no-repeat;
   margin-top: 1.5em;
   border-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lower {
@@ -78,9 +81,25 @@ img {
   width: 2em;
 }
 
-img:hover {
-  background-color: hsl(178, 100%, 50%);
-  opacity: 0.1;
+.image_overlay {
+  display: hidden;
+}
+
+.image_overlay:hover {
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(178, 100%, 50%, 0.5);
+}
+
+.image_overlay svg {
+  opacity: 0;
+}
+
+.image_overlay svg:hover {
+  opacity: 100;
 }
 
 .text_a {
