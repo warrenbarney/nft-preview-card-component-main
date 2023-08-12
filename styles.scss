@@ -123,6 +123,7 @@ img {
     justify-content: center;
     align-items: center;
     background-color: hsla(178, 100%, 50%, 0.5);
+    transition: all 0.5s ease-in;
 }
 
 .image_overlay svg {
@@ -131,6 +132,7 @@ img {
 
 .image_overlay svg:hover {
     opacity: 100;
+    transition: all 0.5s ease-in;
 }
 
 .text_a {
@@ -147,15 +149,23 @@ p,
 h1,
 .text_d {
     color: hsl(0, 0%, 100%);
+
 }
 
 h1 {
     font-size: 22px;
     padding: 1em 1em;
+
 }
 
-h1:hover {
+h1 a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+h1 a:hover {
     color: hsl(178, 100%, 50%);
+    transition: all 0.2s ease-in;
 }
 
 p {
@@ -186,8 +196,15 @@ p {
     font-size: 15px;
 }
 
-.text_d:hover {
+.text_d a {
+    color: hsl(0, 0%, 100%);
+
+    text-decoration: none;
+}
+
+.text_d a:hover {
     color: hsl(178, 100%, 50%);
+    transition: all 0.5s ease-in;
 }
 
 .icon_a {
@@ -201,11 +218,18 @@ p {
     font-size: 11px;
     text-align: center;
     color: hsl(228, 45%, 44%);
+    text-decoration: none;
+
 }
 
 .attribution a {
 
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
-    background-clip: text;
+    color: hsl(215, 51%, 70%);
     font-size: 11px;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: hsl(178, 100%, 50%);
+    transition: all 0.2s ease-in;
 }

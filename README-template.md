@@ -33,48 +33,51 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution on Github](https://github.com/warrenbarney/nft-preview-card-component-main)(target=(_blank))
+- Solution URL: [Solution on Github](https://github.com/warrenbarney/nft-preview-card-component-main)
 - Live Site URL: [Live](https://main--dapper-pegasus-428307.netlify.app/)
 
 ## My process
 
 ### Built with
 
-- HTML5 markup
+- HTML5
 - CSS
 - Flexbox
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned more about icons, background-images, :hover, gradients and overlays.  
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<!--I learned that this is the info icon in the head section.  Pretty cool.-->
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.image_overlay {
+  display: hidden;
 }
-```
 
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.image_overlay:hover {
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(178, 100%, 50%, 0.5);
 }
+
+.image_overlay svg {
+  opacity: 0;
+}
+
+.image_overlay svg:hover {
+  opacity: 100;
+}
+/*I discovered more about display: hidden, and opacity... Not sure if this is best practice :P*/
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
