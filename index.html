@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <title>Frontend Mentor | NFT preview card component</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="image"><a href="#">
-        <div class="image_overlay"><svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-            <g fill="none" fill-rule="evenodd">
-              <path d="M0 0h48v48H0z" />
-              <path
-                d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z"
-                fill="#FFF" fill-rule="nonzero" />
-            </g>
-          </svg>
+  <body>
+    <div class="container">
+      <div class="image">
+        <a href="#">
+          <div class="image_overlay">
+            <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path d="M0 0h48v48H0z" />
+                <path
+                  d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z"
+                  fill="#FFF"
+                  fill-rule="nonzero"
+                />
+              </g>
+            </svg>
+          </div>
+        </a>
+      </div>
+      <section class="lower">
+        <h1><a href="#">Equilibrium #3429</a></h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="block">
+          <div class="box_a">
+            <div class="icon_a">
+              <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                  fill="#00FFF8"
+                />
+              </svg>
+            </div>
+            <div class="text_a">0.041 ETH</div>
+          </div>
+          <div class="box_b">
+            <div class="icon_a">
+              <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                  fill="#8BACD9"
+                />
+              </svg>
+            </div>
+            <div class="text_b">3 days left</div>
+          </div>
         </div>
-      </a>
+        <div class="creator">
+          <img src="images\image-avatar.png" alt="Avatar" />
+          <div class="text_c">Creation of</div>
+          <div class="text_d"><a href="#">&nbspJules Wyvern</a></div>
+        </div>
+      </section>
     </div>
-    <section class="lower">
-      <h1><a href="#">Equilibrium #3429</a></h1>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
-      <div class="block">
-        <div class="box_a">
-          <div class="icon_a"><svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
-                fill="#00FFF8" />
-            </svg></div>
-          <div class="text_a">0.041 ETH</div>
-        </div>
-        <div class="box_b">
-          <div class="icon_a"><svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
-                fill="#8BACD9" />
-            </svg></div>
-          <div class="text_b"> 3 days left</div>
-        </div>
-      </div>
-      <div class="creator">
-        <img src="images\image-avatar.png" alt="Avatar">
-        <div class="text_c">Creation of </div>
-        <div class="text_d"><a href="#">&nbspJules Wyvern</a></div>
-      </div>
-    </section>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/warrenbarney/nft-preview-card-component-main" target="_blank">
-      warrenB</a>.
-  </div>
-</body>
-
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/warrenbarney/nft-preview-card-component-main"
+        target="_blank"
+      >
+        warrenB</a
+      >.
+    </div>
+  </body>
 </html>
